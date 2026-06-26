@@ -7,6 +7,12 @@ editor: visual
 Data used located in data/cleaned/orange_cases.csv
 
 ggplot:
+```{r}
+
+orange_cases <- read_csv("../data/cleaned/orange_cases.csv")
+
+```
+
 
 ```{r}
 ggplot(
