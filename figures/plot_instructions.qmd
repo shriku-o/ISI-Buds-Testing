@@ -10,9 +10,6 @@ Data used located in
 orange_cases <- read_csv("data/cleaned/orange_cases.csv")
 ```
 
-```{r}
-library(ggplot)
-```
 
 ```{r}
 ggplot(
