@@ -19,3 +19,25 @@ glimpse(cacovid19)
 ```
 
 
+```{r}
+
+orange_cases <- read_csv("../data/cleaned/orange_cases.csv")
+
+```
+
+
+```{r}
+ggplot(
+     orange_cases, 
+     aes(x = date, y = cumulative_cases)) + 
+     geom_line(color = "blue",linewidth = 0.8) +
+  scale_y_continuous(labels = scales::comma) +
+     labs(
+           x = "Date",
+           y = "Cumulative Cases",
+           title = "Total COVID19 Cases Evolution in Orange County"
+       ) +
+  theme_minimal()
+```
+
+
