@@ -1,0 +1,21 @@
+---
+title: "plot_instructions.qmd"
+format: html
+editor: visual
+---
+
+Data used located in data/cleaned/orange_cases.csv
+
+ggplot:
+
+```{r}
+ggplot(
+     orange_cases, 
+     aes(x = date, y = cumulative_cases)) + 
+     geom_line() + 
+     labs(
+           x = "Date",
+           y = "Cumulative Cases",
+           title = "Total COVID19 Cases Evolution in Orange County"
+       )
+```
