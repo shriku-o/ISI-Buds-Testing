@@ -4,9 +4,15 @@ format: html
 editor: visual
 ---
 
-Data used located in data/cleaned/orange_cases.csv
+Data used located in
 
-ggplot:
+```{r}
+data/cleaned/orange_cases.csv
+```
+
+```{r}
+library(ggplot)
+```
 
 ```{r}
 ggplot(
@@ -18,4 +24,20 @@ ggplot(
            y = "Cumulative Cases",
            title = "Total COVID19 Cases Evolution in Orange County"
        )
+```
+
+To use plot_orange_cases.rds to load the plot object itself and make changes on it:
+
+```{r}
+orange_cases_plot <- readRDS("figures/orange_cases_plot.rds")
+
+orange_cases_plot
+```
+
+Then you can make changes like
+
+```{r}
+orange_cases_plot +
+  theme_minimal() +
+  labs(title = "Edited title")
 ```
