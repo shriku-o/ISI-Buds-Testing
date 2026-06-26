@@ -21,7 +21,8 @@ glimpse(cacovid19)
 
 ```{r}
 
-orange_cases <- read_csv("/data/cleaned/orange_cases.csv")
+
+orange_cases <- read_csv("data/cleaned/orange_cases.csv")
 
 ```
 
