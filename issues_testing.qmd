@@ -4,3 +4,10 @@ format: html
 ---
 
 hello make a bunch of issues please :)
+
+
+```{r}
+read.csv("data/covid19hospitalbycounty.csv")
+
+
+```
