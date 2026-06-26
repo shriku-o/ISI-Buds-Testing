@@ -17,3 +17,5 @@ cacovid19 <- read.csv("data/ca_covid_cases.csv")
 glimpse(covid19_county)
 glimpse(cacovid19)
 ```
+
+
