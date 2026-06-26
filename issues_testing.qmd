@@ -4,10 +4,16 @@ format: html
 ---
 
 hello make a bunch of issues please :)
-
+```{r}
+library(tidyverse)
+```
 
 ```{r}
-read.csv("data/covid19hospitalbycounty.csv")
+covid19_county <- read.csv("data/covid19hospitalbycounty.csv")
+cacovid19 <- read.csv("data/ca_covid_cases.csv")
+```
 
-
+```{r}
+glimpse(covid19_county)
+glimpse(cacovid19)
 ```
