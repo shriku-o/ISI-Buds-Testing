@@ -9,8 +9,8 @@ library(tidyverse)
 ```
 
 ```{r}
-covid19_county <- read.csv("data/covid19hospitalbycounty.csv")
-cacovid19 <- read.csv("data/ca_covid_cases.csv")
+covid19_county <- read.csv("data/raw/covid19hospitalbycounty.csv")
+cacovid19 <- read.csv("data/raw/ca_covid_cases.csv")
 ```
 
 ```{r}
