@@ -7,7 +7,7 @@ editor: visual
 Data used located in
 
 ```{r}
-data/cleaned/orange_cases.csv
+orange_cases <- read_csv("data/cleaned/orange_cases.csv")
 ```
 
 ```{r}
@@ -29,15 +29,13 @@ ggplot(
 To use plot_orange_cases.rds to load the plot object itself and make changes on it:
 
 ```{r}
-orange_cases_plot <- readRDS("figures/orange_cases_plot.rds")
-
-orange_cases_plot
+plot_orange_cases<- readRDS("figures/plot_orange_cases.rds")
 ```
 
 Then you can make changes like
 
 ```{r}
-orange_cases_plot +
+plot_orange_cases +
   theme_minimal() +
   labs(title = "Edited title")
 ```
